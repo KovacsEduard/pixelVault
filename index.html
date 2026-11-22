@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>PixelVault – Játékbolt</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ffd60a'/%3E%3Cstop offset='100%25' stop-color='%23ff9f0a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0a' stroke='%232b2a24' stroke-width='2'/%3E%3Crect x='8' y='8' width='48' height='48' rx='12' fill='url(%23g)'/%3E%3Cg fill='none' stroke='%230a0a0a' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 32h6M23 29v6'/%3E%3Cpath d='M42 20H22a7 7 0 0 0-6.8 5.6L14 36a5 5 0 0 0 8.8 3.6L26 36h12l3.2 3.6A5 5 0 0 0 50 36l-1.2-10.4A7 7 0 0 0 42 20z'/%3E%3C/g%3E%3Ccircle cx='39' cy='30' r='2.2' fill='%230a0a0a'/%3E%3Ccircle cx='44' cy='34' r='2.2' fill='%230a0a0a'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="#top"><i>🎮</i>PixelVault</a>
+        <div class="sp"></div>
+
+        <button class="cartbtn" id="tg" aria-label="Téma váltása" title="Téma váltása"></button>
+        <button class="cartbtn" id="cartOpen">🛒 Kosár<b id="cnt">0</b></button>
+    </nav>
+
+    <header class="hero" id="top">
+        <i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i>
+        <span class="pill">Őszi leárazás – akár 60% kedvezmény</span>
+        <h1>Találd meg a <span>következő kedvenc</span> játékod</h1>
+        <p>Több ezer óra szórakozás egy helyen. Böngéssz kategóriák, ár és megjelenési év szerint, és ellenőrizd a
+            gépigényt vásárlás előtt.</p>
+        <a class="cta" href="#shop">Böngészés indítása</a>
+        <div class="stats">
+            <div><b>24+</b><small>kiemelt játék</small></div>
+            <div><b>6</b><small>kategória</small></div>
+            <div><b>24/7</b><small>azonnali letöltés</small></div>
+        </div>
+    </header>
+    <div class="mq">
+        <div class="mt" id="mt"></div>
+    </div>
+
+    <main id="shop">
+        <h2>Játékkatalógus</h2>
+        <p class="sub">Szűrj kategória, ár és év szerint, vagy keress név alapján.</p>
+        <div class="sbox big"><svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+            </svg><input id="q" type="search" maxlength="40" placeholder="Keresés a játékok között…" autocomplete="off">
+        </div>
+        <div class="filters">
+            <label>Minimum ár (Ft)<input id="pmin" inputmode="numeric" maxlength="6" placeholder="0"></label>
+            <label>Maximum ár (Ft)<input id="pmax" inputmode="numeric" maxlength="6" placeholder="30000"></label>
+            <label>Megjelenés éve<select id="yr"></select></label>
+            <label>Rendezés<select id="so">
+                    <option value="n">Név szerint</option>
+                    <option value="pa">Ár: növekvő</option>
+                    <option value="pd">Ár: csökkenő</option>
+                    <option value="yd">Legújabb elöl</option>
+                </select></label>
+            <div class="rng">
+                <div class="rl"><span id="rv1">0 Ft</span><span id="rv2">20 000 Ft</span></div>
+                <div class="rt">
+                    <div class="rf" id="rf"></div><input type="range" id="r1" min="0" max="20000" step="500" value="0"
+                        aria-label="Minimum ár"><input type="range" id="r2" min="0" max="20000" step="500" value="20000"
+                        aria-label="Maximum ár">
+                </div>
+            </div>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="warn" id="warn"></div>
+        <div class="grid" id="grid"></div>
+    </main>
+    <footer>© 2026 PixelVault – iskolai projekt. A játékok nevei és követelményei tájékoztató jellegűek, az árak
+        hozzávetőlegesek.</footer>
+
+    <div class="ov" id="mo">
+        <div class="mwrap"><button class="x" id="mx">✕</button>
+            <div class="modal" id="mb"></div>
+        </div>
+    </div>
+    <div class="ov" id="dov"></div>
+    <aside class="drawer" id="dr">
+        <div class="dh">
+            <h2 style="font-size:22px;margin:0">Kosarad</h2><button id="dx">✕</button>
+        </div>
+        <div class="items" id="items"></div>
+        <div class="df">
+            <div class="tot"><span>Összesen</span><span id="tot">0 Ft</span></div><button class="pay" id="pay">💳
+                Fizetés kártyával</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
