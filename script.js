@@ -22,7 +22,7 @@ const G=[
 {id:21,n:"Hollow Knight: Silksong",c:"Akciójáték",y:2025,p:5990,h:[345,240],d:"Hornet útja Pharloom királyságában: gyors, kihívást jelentő metroidvania a Hollow Knight folytatásaként.",min:"Intel Core i5-3470|4 GB RAM|GeForce GTX 560 Ti",rec:"Intel Core i5-6600|8 GB RAM|GeForce GTX 960"},
 {id:22,n:"Clair Obscur: Expedition 33",c:"RPG",y:2025,p:17990,h:[40,230],d:"Belle Époque ihletésű, körökre osztott szerepjáték valós idejű elemekkel, ahol minden évben egy újabb kor hal meg.",min:"Intel Core i7-6700K / Ryzen 5 2600|16 GB RAM|GeForce GTX 1060 / Radeon RX 580",rec:"Intel Core i7-10700 / Ryzen 5 5600X|16 GB RAM|GeForce RTX 2070 / Radeon RX 6700 XT"},
 {id:23,n:"EA SPORTS FC 25",c:"Sport",y:2024,p:16990,h:[140,215],d:"A futball legnagyobb játéka új taktikai rendszerrel, több ezer valódi játékossal és bajnoksággal.",min:"Intel Core i5-6600K / Ryzen 5 1600|8 GB RAM|GeForce GTX 1050 Ti / Radeon RX 570",rec:"Intel Core i7-6800K / Ryzen 5 2600|12 GB RAM|GeForce GTX 1660 / Radeon RX 5700"},
-{id:24,n:"Battlefield 6",c:"Akciójáték",y:2025,p:19990,h:[205,30],d:"Nagyszabású, pusztítható környezetű csapatalapú lövöldözős, ahol légi, szárazföldi és gyalogos harc is vár rád.",min:"Intel Core i5-8400 / Ryzen 5 2600|16 GB RAM|GeForce GTX 1050 Ti",rec:"Intel Core i7-10700 / Ryzen 7 3700X|16 GB RAM|GeForce RTX 2060 / Radeon RX 5600 XT"}
+
 ];
 const STEAM_IDS={1:1091500,2:292030,3:1245620,4:730,5:1174180,6:1145360,7:413150,8:289070,9:1551360,10:2050650,11:227300,12:367520,13:1086940,14:2358720,15:553850,16:1623730,17:990080,18:2379780,19:1966720,20:2246340,21:1030300,22:1903340,23:2669320};
 const BAD=["fasz","kurva","geci","picsa","szar","fos","buzi","cigany","anyad","kurva","fuck","shit","bitch","cunt","nigger","dick","pussy","asshole"];
